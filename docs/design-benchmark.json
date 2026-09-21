@@ -1,0 +1,2556 @@
+{
+  "created": "2026-09-21T13:50:31.690Z",
+  "repeats": 3,
+  "rows": [
+    {
+      "repeat": 0,
+      "index": 0,
+      "engine": "llm",
+      "prompt": "Compact dark amber BBS with double borders and bold titles",
+      "expected": {
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#ffc65c",
+        "focus": "#ffc65c",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "double",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 327,
+        "completion_tokens": 34,
+        "total_tokens": 361,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1365,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 0,
+      "engine": "jev",
+      "prompt": "Compact dark amber BBS with double borders and bold titles",
+      "expected": {
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#ffc65c",
+        "focus": "#ffc65c",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "double",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 735,
+        "output_tokens": 220,
+        "cost": 0.00003087,
+        "inputTokens": 735
+      },
+      "costUsd": 0.00003087,
+      "elapsedMs": 507,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 1,
+      "engine": "llm",
+      "prompt": "Light blue interface with rounded borders, comfortable spacing, restrained headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#2563eb",
+        "focus": "#2563eb",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "rounded",
+          "density": "comfortable",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 328,
+        "completion_tokens": 34,
+        "total_tokens": 362,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 939,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 1,
+      "engine": "jev",
+      "prompt": "Light blue interface with rounded borders, comfortable spacing, restrained headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#2563eb",
+        "focus": "#2563eb",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "rounded",
+          "density": "comfortable",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 736,
+        "output_tokens": 222,
+        "cost": 0.000030912,
+        "inputTokens": 736
+      },
+      "costUsd": 0.000030912,
+      "elapsedMs": 389,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 2,
+      "engine": "llm",
+      "prompt": "Dark violet console. Square single borders, compact layout, quiet headings",
+      "expected": {
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#cc9eff",
+        "focus": "#cc9eff",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "plain",
+          "density": "compact",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 329,
+        "completion_tokens": 35,
+        "total_tokens": 364,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 925,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 2,
+      "engine": "jev",
+      "prompt": "Dark violet console. Square single borders, compact layout, quiet headings",
+      "expected": {
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#cc9eff",
+        "focus": "#cc9eff",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "plain",
+          "density": "compact",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 737,
+        "output_tokens": 221,
+        "cost": 0.000030954,
+        "inputTokens": 737
+      },
+      "costUsd": 0.000030954,
+      "elapsedMs": 298,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 3,
+      "engine": "llm",
+      "prompt": "Light green terminal garden with heavy borders, comfortable spacing, bold headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#15803d",
+        "focus": "#15803d",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "heavy",
+          "density": "comfortable",
+          "emphasis": "bold"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 329,
+        "completion_tokens": 34,
+        "total_tokens": 363,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1486,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 3,
+      "engine": "jev",
+      "prompt": "Light green terminal garden with heavy borders, comfortable spacing, bold headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#15803d",
+        "focus": "#15803d",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "heavy",
+          "density": "comfortable",
+          "emphasis": "bold"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 737,
+        "output_tokens": 222,
+        "cost": 0.000030954,
+        "inputTokens": 737
+      },
+      "costUsd": 0.000030954,
+      "elapsedMs": 468,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 4,
+      "engine": "llm",
+      "prompt": "Move the Send button below the input. Keep the current styling.",
+      "expected": {
+        "change": "preserve"
+      },
+      "selection": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": null,
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 421,
+        "completion_tokens": 35,
+        "total_tokens": 456,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 966,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 4,
+      "engine": "jev",
+      "prompt": "Move the Send button below the input. Keep the current styling.",
+      "expected": {
+        "change": "preserve"
+      },
+      "selection": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": null,
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 851,
+        "output_tokens": 223,
+        "cost": 0.000035742,
+        "inputTokens": 851
+      },
+      "costUsd": 0.000035742,
+      "elapsedMs": 335,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 5,
+      "engine": "llm",
+      "prompt": "Change only the shared style to dark cyan, rounded borders, compact spacing and bold headings",
+      "expected": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#6bdded",
+        "focus": "#6bdded",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "rounded",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 426,
+        "completion_tokens": 34,
+        "total_tokens": 460,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1405,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        },
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 0,
+      "index": 5,
+      "engine": "jev",
+      "prompt": "Change only the shared style to dark cyan, rounded borders, compact spacing and bold headings",
+      "expected": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#0e7490",
+        "focus": "#0e7490",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "rounded",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 856,
+        "output_tokens": 220,
+        "cost": 0.000035952,
+        "inputTokens": 856
+      },
+      "costUsd": 0.000035952,
+      "elapsedMs": 471,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        },
+        {
+          "key": "canvas",
+          "pass": false
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": false
+    },
+    {
+      "repeat": 1,
+      "index": 0,
+      "engine": "jev",
+      "prompt": "Compact dark amber BBS with double borders and bold titles",
+      "expected": {
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#ffc65c",
+        "focus": "#ffc65c",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "double",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 735,
+        "output_tokens": 220,
+        "cost": 0.00003087,
+        "inputTokens": 735
+      },
+      "costUsd": 0.00003087,
+      "elapsedMs": 292,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 0,
+      "engine": "llm",
+      "prompt": "Compact dark amber BBS with double borders and bold titles",
+      "expected": {
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#ffc65c",
+        "focus": "#ffc65c",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "double",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 327,
+        "completion_tokens": 34,
+        "total_tokens": 361,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1028,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 1,
+      "engine": "jev",
+      "prompt": "Light blue interface with rounded borders, comfortable spacing, restrained headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#2563eb",
+        "focus": "#2563eb",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "rounded",
+          "density": "comfortable",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 736,
+        "output_tokens": 222,
+        "cost": 0.000030912,
+        "inputTokens": 736
+      },
+      "costUsd": 0.000030912,
+      "elapsedMs": 515,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 1,
+      "engine": "llm",
+      "prompt": "Light blue interface with rounded borders, comfortable spacing, restrained headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#2563eb",
+        "focus": "#2563eb",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "rounded",
+          "density": "comfortable",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 328,
+        "completion_tokens": 34,
+        "total_tokens": 362,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1329,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 2,
+      "engine": "jev",
+      "prompt": "Dark violet console. Square single borders, compact layout, quiet headings",
+      "expected": {
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#cc9eff",
+        "focus": "#cc9eff",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "plain",
+          "density": "compact",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 737,
+        "output_tokens": 221,
+        "cost": 0.000030954,
+        "inputTokens": 737
+      },
+      "costUsd": 0.000030954,
+      "elapsedMs": 311,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 2,
+      "engine": "llm",
+      "prompt": "Dark violet console. Square single borders, compact layout, quiet headings",
+      "expected": {
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#cc9eff",
+        "focus": "#cc9eff",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "plain",
+          "density": "compact",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 329,
+        "completion_tokens": 35,
+        "total_tokens": 364,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 957,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 3,
+      "engine": "jev",
+      "prompt": "Light green terminal garden with heavy borders, comfortable spacing, bold headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#15803d",
+        "focus": "#15803d",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "heavy",
+          "density": "comfortable",
+          "emphasis": "bold"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 737,
+        "output_tokens": 222,
+        "cost": 0.000030954,
+        "inputTokens": 737
+      },
+      "costUsd": 0.000030954,
+      "elapsedMs": 339,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 3,
+      "engine": "llm",
+      "prompt": "Light green terminal garden with heavy borders, comfortable spacing, bold headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#15803d",
+        "focus": "#15803d",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "heavy",
+          "density": "comfortable",
+          "emphasis": "bold"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 329,
+        "completion_tokens": 34,
+        "total_tokens": 363,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 2387,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 4,
+      "engine": "jev",
+      "prompt": "Move the Send button below the input. Keep the current styling.",
+      "expected": {
+        "change": "preserve"
+      },
+      "selection": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": null,
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 851,
+        "output_tokens": 223,
+        "cost": 0.000035742,
+        "inputTokens": 851
+      },
+      "costUsd": 0.000035742,
+      "elapsedMs": 414,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 4,
+      "engine": "llm",
+      "prompt": "Move the Send button below the input. Keep the current styling.",
+      "expected": {
+        "change": "preserve"
+      },
+      "selection": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": null,
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 421,
+        "completion_tokens": 35,
+        "total_tokens": 456,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 799,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 1,
+      "index": 5,
+      "engine": "jev",
+      "prompt": "Change only the shared style to dark cyan, rounded borders, compact spacing and bold headings",
+      "expected": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#0e7490",
+        "focus": "#0e7490",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "rounded",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 856,
+        "output_tokens": 220,
+        "cost": 0.000035952,
+        "inputTokens": 856
+      },
+      "costUsd": 0.000035952,
+      "elapsedMs": 428,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        },
+        {
+          "key": "canvas",
+          "pass": false
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": false
+    },
+    {
+      "repeat": 1,
+      "index": 5,
+      "engine": "llm",
+      "prompt": "Change only the shared style to dark cyan, rounded borders, compact spacing and bold headings",
+      "expected": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#6bdded",
+        "focus": "#6bdded",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "rounded",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 426,
+        "completion_tokens": 34,
+        "total_tokens": 460,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 877,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        },
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 0,
+      "engine": "llm",
+      "prompt": "Compact dark amber BBS with double borders and bold titles",
+      "expected": {
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#ffc65c",
+        "focus": "#ffc65c",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "double",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 327,
+        "completion_tokens": 34,
+        "total_tokens": 361,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1085,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 0,
+      "engine": "jev",
+      "prompt": "Compact dark amber BBS with double borders and bold titles",
+      "expected": {
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "double",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#ffc65c",
+        "focus": "#ffc65c",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "double",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 735,
+        "output_tokens": 220,
+        "cost": 0.00003087,
+        "inputTokens": 735
+      },
+      "costUsd": 0.00003087,
+      "elapsedMs": 423,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 1,
+      "engine": "llm",
+      "prompt": "Light blue interface with rounded borders, comfortable spacing, restrained headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#2563eb",
+        "focus": "#2563eb",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "rounded",
+          "density": "comfortable",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 328,
+        "completion_tokens": 34,
+        "total_tokens": 362,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1042,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 1,
+      "engine": "jev",
+      "prompt": "Light blue interface with rounded borders, comfortable spacing, restrained headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "blue",
+        "border": "rounded",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#2563eb",
+        "focus": "#2563eb",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "rounded",
+          "density": "comfortable",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 736,
+        "output_tokens": 222,
+        "cost": 0.000030912,
+        "inputTokens": 736
+      },
+      "costUsd": 0.000030912,
+      "elapsedMs": 306,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 2,
+      "engine": "llm",
+      "prompt": "Dark violet console. Square single borders, compact layout, quiet headings",
+      "expected": {
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#cc9eff",
+        "focus": "#cc9eff",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "plain",
+          "density": "compact",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 329,
+        "completion_tokens": 35,
+        "total_tokens": 364,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1411,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 2,
+      "engine": "jev",
+      "prompt": "Dark violet console. Square single borders, compact layout, quiet headings",
+      "expected": {
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "violet",
+        "border": "plain",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#cc9eff",
+        "focus": "#cc9eff",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "plain",
+          "density": "compact",
+          "emphasis": "quiet"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 737,
+        "output_tokens": 221,
+        "cost": 0.000030954,
+        "inputTokens": 737
+      },
+      "costUsd": 0.000030954,
+      "elapsedMs": 360,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 3,
+      "engine": "llm",
+      "prompt": "Light green terminal garden with heavy borders, comfortable spacing, bold headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#15803d",
+        "focus": "#15803d",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "heavy",
+          "density": "comfortable",
+          "emphasis": "bold"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 329,
+        "completion_tokens": 34,
+        "total_tokens": 363,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1309,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 3,
+      "engine": "jev",
+      "prompt": "Light green terminal garden with heavy borders, comfortable spacing, bold headings",
+      "expected": {
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "green",
+        "border": "heavy",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#15803d",
+        "focus": "#15803d",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "heavy",
+          "density": "comfortable",
+          "emphasis": "bold"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 737,
+        "output_tokens": 222,
+        "cost": 0.000030954,
+        "inputTokens": 737
+      },
+      "costUsd": 0.000030954,
+      "elapsedMs": 353,
+      "checks": [
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 4,
+      "engine": "llm",
+      "prompt": "Move the Send button below the input. Keep the current styling.",
+      "expected": {
+        "change": "preserve"
+      },
+      "selection": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": null,
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 421,
+        "completion_tokens": 35,
+        "total_tokens": 456,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 934,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 4,
+      "engine": "jev",
+      "prompt": "Move the Send button below the input. Keep the current styling.",
+      "expected": {
+        "change": "preserve"
+      },
+      "selection": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "quiet"
+      },
+      "theme": null,
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 851,
+        "output_tokens": 223,
+        "cost": 0.000035742,
+        "inputTokens": 851
+      },
+      "costUsd": 0.000035742,
+      "elapsedMs": 349,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 5,
+      "engine": "llm",
+      "prompt": "Change only the shared style to dark cyan, rounded borders, compact spacing and bold headings",
+      "expected": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#101419",
+        "surface": "#242b35",
+        "foreground": "#f1f3f5",
+        "muted": "#b3bdca",
+        "border": "#6e7c91",
+        "primary": "#6bdded",
+        "focus": "#6bdded",
+        "danger": "#ff8585",
+        "success": "#6bdd97",
+        "warning": "#ffd166",
+        "design": {
+          "border": "rounded",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 426,
+        "completion_tokens": 34,
+        "total_tokens": 460,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "costUsd": null,
+      "elapsedMs": 1043,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        },
+        {
+          "key": "canvas",
+          "pass": true
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": true
+    },
+    {
+      "repeat": 2,
+      "index": 5,
+      "engine": "jev",
+      "prompt": "Change only the shared style to dark cyan, rounded borders, compact spacing and bold headings",
+      "expected": {
+        "change": "apply",
+        "canvas": "dark",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "selection": {
+        "change": "apply",
+        "canvas": "light",
+        "hue": "cyan",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "bold"
+      },
+      "theme": {
+        "background": "#f5f5f4",
+        "surface": "#e5e7eb",
+        "foreground": "#171b23",
+        "muted": "#4b5563",
+        "border": "#64748b",
+        "primary": "#0e7490",
+        "focus": "#0e7490",
+        "danger": "#b91c1c",
+        "success": "#166534",
+        "warning": "#854d0e",
+        "design": {
+          "border": "rounded",
+          "density": "compact",
+          "emphasis": "bold"
+        }
+      },
+      "model": "typesafe/jev-1.13-20260917",
+      "usage": {
+        "input_tokens": 856,
+        "output_tokens": 220,
+        "cost": 0.000035952,
+        "inputTokens": 856
+      },
+      "costUsd": 0.000035952,
+      "elapsedMs": 450,
+      "checks": [
+        {
+          "key": "change",
+          "pass": true
+        },
+        {
+          "key": "canvas",
+          "pass": false
+        },
+        {
+          "key": "hue",
+          "pass": true
+        },
+        {
+          "key": "border",
+          "pass": true
+        },
+        {
+          "key": "density",
+          "pass": true
+        },
+        {
+          "key": "emphasis",
+          "pass": true
+        }
+      ],
+      "nativeAudits": [],
+      "pass": false
+    }
+  ]
+}

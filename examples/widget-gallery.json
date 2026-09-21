@@ -1,0 +1,250 @@
+{
+  "root": "gallery",
+  "elements": {
+    "gallery": {
+      "type": "Column",
+      "props": {},
+      "children": [
+        "widget0",
+        "widget1",
+        "widget2",
+        "widget3",
+        "widget4",
+        "widget5",
+        "widget6",
+        "widget7",
+        "widget8",
+        "widget9",
+        "widget10",
+        "widget11",
+        "widget12",
+        "graphics0",
+        "graphics1"
+      ]
+    },
+    "widget0": {
+      "type": "BigText",
+      "props": {
+        "text": "HELLO",
+        "font": "pixel"
+      },
+      "children": []
+    },
+    "widget1": {
+      "type": "PlayingCards",
+      "props": {
+        "title": "Hand",
+        "cards": [
+          {
+            "rank": "A",
+            "suit": "spades"
+          },
+          {
+            "rank": "10",
+            "suit": "hearts"
+          }
+        ]
+      },
+      "children": []
+    },
+    "widget2": {
+      "type": "QRCode",
+      "props": {
+        "title": "Link",
+        "data": "https://example.com"
+      },
+      "children": []
+    },
+    "widget3": {
+      "type": "Equalizer",
+      "props": {
+        "title": "EQ",
+        "levels": [
+          80,
+          55,
+          30
+        ]
+      },
+      "children": []
+    },
+    "widget4": {
+      "type": "BarChart",
+      "props": {
+        "title": "Sales",
+        "labels": [
+          "Q1",
+          "Q2"
+        ],
+        "values": [
+          120,
+          200
+        ]
+      },
+      "children": []
+    },
+    "widget5": {
+      "type": "Chart",
+      "props": {
+        "title": "Trend",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "kind": "line"
+      },
+      "children": []
+    },
+    "widget6": {
+      "type": "ScrollView",
+      "props": {
+        "title": "Info",
+        "text": "Log entry 1: event processed\nLog entry 2: event processed\nLog entry 3: event processed\nLog entry 4: event processed\nLog entry 5: event processed\nLog entry 6: event processed\nLog entry 7: event processed\nLog entry 8: event processed\nLog entry 9: event processed\nLog entry 10: event processed\nLog entry 11: event processed\nLog entry 12: event processed\nLog entry 13: event processed\nLog entry 14: event processed\nLog entry 15: event processed\nLog entry 16: event processed\nLog entry 17: event processed\nLog entry 18: event processed\nLog entry 19: event processed\nLog entry 20: event processed\nLog entry 21: event processed\nLog entry 22: event processed\nLog entry 23: event processed\nLog entry 24: event processed\nLog entry 25: event processed\nLog entry 26: event processed\nLog entry 27: event processed\nLog entry 28: event processed\nLog entry 29: event processed\nLog entry 30: event processed\nLog entry 31: event processed\nLog entry 32: event processed\nLog entry 33: event processed\nLog entry 34: event processed\nLog entry 35: event processed\nLog entry 36: event processed\nLog entry 37: event processed\nLog entry 38: event processed\nLog entry 39: event processed\nLog entry 40: event processed",
+        "height": 8
+      },
+      "children": []
+    },
+    "widget7": {
+      "type": "Popup",
+      "props": {
+        "title": "Note",
+        "label": "OK",
+        "body": "Done.",
+        "open": {
+          "$bindState": "/widget7"
+        }
+      },
+      "children": []
+    },
+    "widget8": {
+      "type": "Select",
+      "props": {
+        "title": "Lang",
+        "options": [
+          "en",
+          "fr",
+          "de"
+        ],
+        "value": {
+          "$bindState": "/widget8"
+        }
+      },
+      "children": []
+    },
+    "widget9": {
+      "type": "Tabs",
+      "props": {
+        "title": "Panels",
+        "tabs": [
+          {
+            "label": "A",
+            "text": "First panel."
+          },
+          {
+            "label": "B",
+            "text": "Second panel."
+          }
+        ],
+        "value": {
+          "$bindState": "/widget9"
+        }
+      },
+      "children": []
+    },
+    "widget10": {
+      "type": "Slider",
+      "props": {
+        "label": "Vol",
+        "value": {
+          "$bindState": "/widget10"
+        },
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      "children": []
+    },
+    "widget11": {
+      "type": "BigText",
+      "props": {
+        "text": "READY",
+        "font": "box"
+      },
+      "children": []
+    },
+    "widget12": {
+      "type": "Sparkline",
+      "props": {
+        "title": "Detailed telemetry",
+        "data": [
+          2,
+          5,
+          3,
+          9,
+          7,
+          8,
+          4,
+          12
+        ],
+        "dense": true
+      },
+      "children": []
+    },
+    "graphics0": {
+      "type": "AnsiArt",
+      "props": {
+        "title": "Beacon",
+        "content": "\u001b[38;2;70;210;255m   /\\\n--<  >--\n   \\/\u001b[0m",
+        "height": 6
+      }
+    },
+    "graphics1": {
+      "type": "Scene",
+      "props": {
+        "title": "Dungeon",
+        "rows": [
+          "########",
+          "#@..g..#",
+          "###..###"
+        ],
+        "legend": [
+          {
+            "symbol": "#",
+            "label": "Wall",
+            "color": "#667788"
+          },
+          {
+            "symbol": "@",
+            "label": "You",
+            "color": "#ffb000"
+          },
+          {
+            "symbol": ".",
+            "label": "Floor",
+            "color": "#334455"
+          },
+          {
+            "symbol": "g",
+            "label": "Goblin",
+            "color": "#ff5544"
+          }
+        ]
+      }
+    }
+  },
+  "state": {
+    "widget7": false,
+    "widget8": "en",
+    "widget9": "A",
+    "widget10": 50
+  }
+}

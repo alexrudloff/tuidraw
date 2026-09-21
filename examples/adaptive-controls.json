@@ -1,0 +1,16 @@
+{
+  "root":"page",
+  "state":{"destination":"Sol","cargo":["Fuel"]},
+  "elements":{
+    "page":{"type":"Column","props":{"maxWidth":110,"horizontalAlign":"center","gap":1},"children":["heading","body","footer"]},
+    "heading":{"type":"Text","props":{"text":"PORT AUTHORITY / Departure planning"}},
+    "body":{"type":"Row","props":{"collapseBelow":70,"gap":2,"grow":1},"children":["controls","manifest"]},
+    "controls":{"type":"Panel","props":{"title":"Flight plan","border":"rounded","padding":1,"gap":1,"titleAlign":"center"},"children":["destination","cargo","clear"]},
+    "destination":{"type":"Select","props":{"title":"Destination","options":["Sol","Alpha Centauri","Barnard's Star","Épsilon Eridani","Tau Ceti"],"value":{"$bindState":"/destination"},"searchable":true}},
+    "cargo":{"type":"MultiSelect","props":{"title":"Cargo manifest","options":["Fuel","Food","Ore","Medical supplies","Navigation charts","Spare parts"],"value":{"$bindState":"/cargo"},"searchable":true}},
+    "clear":{"type":"Button","props":{"label":"Clear cargo","intent":"neutral","disabled":false},"on":{"press":{"action":"setState","params":{"statePath":"/cargo","value":[]}}}},
+    "manifest":{"type":"Table","props":{"title":"Market / credits per unit","headers":["Commodity","Buy","Stock"],"rows":[["Fuel","42","1800"],["Food","17","640"],["Ore","128","96"],["Medical supplies","310","24"]],"columnStyles":[{"width":0,"align":"left","color":"foreground"},{"width":8,"align":"right","color":"success"},{"width":8,"align":"right","color":"muted"}],"columnGap":1,"padding":1,"showHeader":true,"border":"double"}},
+    "footer":{"type":"Panel","props":{"title":"","border":"none","padding":0},"children":["hint"]},
+    "hint":{"type":"Text","props":{"text":"Type to filter · Enter choose · Space toggle cargo · Tab next","muted":true}}
+  }
+}

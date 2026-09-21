@@ -1,0 +1,15 @@
+{
+  "name": "ratatui-json-bridge",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "demo": "node bridge/compose.mjs --demo",
+    "test": "node --test bridge/*.test.mjs",
+    "start": "cargo run --"
+  },
+  "dependencies": {
+    "@json-render/core": "file:vendor/json-render-core-0.21.0.tgz",
+    "zod": "4.3.6"
+  }
+}

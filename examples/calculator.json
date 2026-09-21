@@ -1,0 +1,19 @@
+{
+  "root": "calculator",
+  "elements": {
+    "calculator": {
+      "type": "Keypad",
+      "props": {
+        "title": "Calculator",
+        "value": {
+          "$bindState": "/display"
+        },
+        "mode": "calculator"
+      },
+      "children": []
+    }
+  },
+  "state": {
+    "display": "0"
+  }
+}

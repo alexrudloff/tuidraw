@@ -1,0 +1,2482 @@
+{
+  "created": "2026-09-21T14:36:22.619Z",
+  "repeats": 3,
+  "rows": [
+    {
+      "repeat": 0,
+      "case": "thresholds",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Color code GPU utilization on both the metric and chart: green below 70%, yellow from 70%, red from 90%. Preserve everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "green",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 4244,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12449,
+            "completion_tokens": 261,
+            "total_tokens": 12710,
+            "prompt_tokens_details": {
+              "cached_tokens": 12446,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3665
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 495,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 887,
+            "output_tokens": 223,
+            "cost": 0.000037254,
+            "inputTokens": 887
+          },
+          "costUsd": 0.000037254
+        }
+      ],
+      "outputTokens": 261,
+      "cachedTokens": 12446,
+      "updates": [],
+      "replacementWidgets": 2
+    },
+    {
+      "repeat": 0,
+      "case": "thresholds",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Color code GPU utilization on both the metric and chart: green below 70%, yellow from 70%, red from 90%. Preserve everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "green",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3612,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12650,
+            "completion_tokens": 177,
+            "total_tokens": 12827,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "cache_write_tokens": 12647,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3129
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 445,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 887,
+            "output_tokens": 223,
+            "cost": 0.000037254,
+            "inputTokens": 887
+          },
+          "costUsd": 0.000037254
+        }
+      ],
+      "outputTokens": 177,
+      "cachedTokens": 0,
+      "updates": [
+        {
+          "id": "gpu_util_metric",
+          "key": "color",
+          "value": "success"
+        },
+        {
+          "id": "gpu_util_metric",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "color",
+          "value": "success"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 0,
+      "case": "thresholds",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "Color code GPU utilization on both the metric and chart: green below 70%, yellow from 70%, red from 90%. Preserve everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "green",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3748,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 12652,
+            "completion_tokens": 286,
+            "total_tokens": 12938,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3210
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 500,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 887,
+            "output_tokens": 223,
+            "cost": 0.000037254,
+            "inputTokens": 887
+          },
+          "costUsd": 0.000037254
+        }
+      ],
+      "outputTokens": 286,
+      "cachedTokens": 0,
+      "updates": [],
+      "replacementWidgets": 2
+    },
+    {
+      "repeat": 0,
+      "case": "table-rows",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Replace only the alerts table rows with [[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]. Preserve its headers, styles, and everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3307,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12459,
+            "completion_tokens": 214,
+            "total_tokens": 12673,
+            "prompt_tokens_details": {
+              "cached_tokens": 12456,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2953
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 318,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 895,
+            "output_tokens": 223,
+            "cost": 0.00003759,
+            "inputTokens": 895
+          },
+          "costUsd": 0.00003759
+        }
+      ],
+      "outputTokens": 214,
+      "cachedTokens": 12456,
+      "updates": [],
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 0,
+      "case": "table-rows",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Replace only the alerts table rows with [[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]. Preserve its headers, styles, and everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 2423,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12660,
+            "completion_tokens": 99,
+            "total_tokens": 12759,
+            "prompt_tokens_details": {
+              "cached_tokens": 10126,
+              "cache_write_tokens": 2531,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2076
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 313,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 895,
+            "output_tokens": 223,
+            "cost": 0.00003759,
+            "inputTokens": 895
+          },
+          "costUsd": 0.00003759
+        }
+      ],
+      "outputTokens": 99,
+      "cachedTokens": 10126,
+      "updates": [
+        {
+          "id": "alerts_table",
+          "key": "rows",
+          "json": "[[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 0,
+      "case": "table-rows",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "Replace only the alerts table rows with [[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]. Preserve its headers, styles, and everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3112,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 12662,
+            "completion_tokens": 201,
+            "total_tokens": 12863,
+            "prompt_tokens_details": {
+              "cached_tokens": 9088,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2745
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 330,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 895,
+            "output_tokens": 223,
+            "cost": 0.00003759,
+            "inputTokens": 895
+          },
+          "costUsd": 0.00003759
+        }
+      ],
+      "outputTokens": 201,
+      "cachedTokens": 9088,
+      "updates": [],
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 0,
+      "case": "table-columns",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "In the alerts table, set the severity column to 7 cells, the message column to flexible width (0), and the node column to 9 cells. Preserve their existing colors and alignment and all other content/layout.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "blue",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 5960,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12463,
+            "completion_tokens": 70,
+            "total_tokens": 12533,
+            "prompt_tokens_details": {
+              "cached_tokens": 12460,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2858
+        },
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12872,
+            "completion_tokens": 227,
+            "total_tokens": 13099,
+            "prompt_tokens_details": {
+              "cached_tokens": 10109,
+              "cache_write_tokens": 2760,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2693
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 372,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 898,
+            "output_tokens": 223,
+            "cost": 0.000037716,
+            "inputTokens": 898
+          },
+          "costUsd": 0.000037716
+        }
+      ],
+      "outputTokens": 297,
+      "cachedTokens": 22569,
+      "updates": null,
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 0,
+      "case": "table-columns",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "In the alerts table, set the severity column to 7 cells, the message column to flexible width (0), and the node column to 9 cells. Preserve their existing colors and alignment and all other content/layout.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "blue",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 2445,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12664,
+            "completion_tokens": 117,
+            "total_tokens": 12781,
+            "prompt_tokens_details": {
+              "cached_tokens": 10126,
+              "cache_write_tokens": 2535,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2111
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 300,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 898,
+            "output_tokens": 223,
+            "cost": 0.000037716,
+            "inputTokens": 898
+          },
+          "costUsd": 0.000037716
+        }
+      ],
+      "outputTokens": 117,
+      "cachedTokens": 10126,
+      "updates": [
+        {
+          "id": "alerts_table",
+          "key": "columnStyles",
+          "json": "[{\"align\":\"left\",\"color\":\"warning\",\"width\":7},{\"align\":\"left\",\"color\":\"foreground\",\"width\":0},{\"align\":\"left\",\"color\":\"muted\",\"width\":9}]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 0,
+      "case": "table-columns",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "In the alerts table, set the severity column to 7 cells, the message column to flexible width (0), and the node column to 9 cells. Preserve their existing colors and alignment and all other content/layout.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "blue",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3116,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 12666,
+            "completion_tokens": 223,
+            "total_tokens": 12889,
+            "prompt_tokens_details": {
+              "cached_tokens": 9088,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2605
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 476,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 898,
+            "output_tokens": 223,
+            "cost": 0.000037716,
+            "inputTokens": 898
+          },
+          "costUsd": 0.000037716
+        }
+      ],
+      "outputTokens": 223,
+      "cachedTokens": 9088,
+      "updates": [],
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 0,
+      "case": "rail-width",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Make the channel rail exactly 26 cells wide. Let the chat area fill the remaining width. Preserve the existing one-cell gap, all content, actions and state.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [
+        {
+          "code": "text-contrast",
+          "id": "root",
+          "message": "muted on surface: contrast 4.43:1, recommended at least 4.5:1.",
+          "severity": "warning"
+        }
+      ],
+      "design": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "elapsedMs": 3789,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 11331,
+            "completion_tokens": 301,
+            "total_tokens": 11632,
+            "prompt_tokens_details": {
+              "cached_tokens": 11328,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3262
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 503,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 891,
+            "output_tokens": 221,
+            "cost": 0.000037422,
+            "inputTokens": 891
+          },
+          "costUsd": 0.000037422
+        }
+      ],
+      "outputTokens": 301,
+      "cachedTokens": 11328,
+      "updates": [],
+      "replacementWidgets": 2
+    },
+    {
+      "repeat": 0,
+      "case": "rail-width",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Make the channel rail exactly 26 cells wide. Let the chat area fill the remaining width. Preserve the existing one-cell gap, all content, actions and state.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [
+        {
+          "code": "text-contrast",
+          "id": "root",
+          "message": "muted on surface: contrast 4.43:1, recommended at least 4.5:1.",
+          "severity": "warning"
+        }
+      ],
+      "design": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "elapsedMs": 3018,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 11532,
+            "completion_tokens": 217,
+            "total_tokens": 11749,
+            "prompt_tokens_details": {
+              "cached_tokens": 10126,
+              "cache_write_tokens": 1403,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2710
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 286,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 891,
+            "output_tokens": 221,
+            "cost": 0.000037422,
+            "inputTokens": 891
+          },
+          "costUsd": 0.000037422
+        }
+      ],
+      "outputTokens": 217,
+      "cachedTokens": 10126,
+      "updates": [
+        {
+          "id": "channel-rail",
+          "key": "width",
+          "value": 26
+        },
+        {
+          "id": "channel-rail",
+          "key": "maxWidth",
+          "value": 26
+        },
+        {
+          "id": "chat-area",
+          "key": "width",
+          "value": "fill"
+        },
+        {
+          "id": "chat-area",
+          "key": "maxWidth",
+          "value": 0
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 0,
+      "case": "rail-width",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "Make the channel rail exactly 26 cells wide. Let the chat area fill the remaining width. Preserve the existing one-cell gap, all content, actions and state.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [
+        {
+          "code": "text-contrast",
+          "id": "root",
+          "message": "muted on surface: contrast 4.43:1, recommended at least 4.5:1.",
+          "severity": "warning"
+        }
+      ],
+      "design": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "elapsedMs": 3801,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 11534,
+            "completion_tokens": 104,
+            "total_tokens": 11638,
+            "prompt_tokens_details": {
+              "cached_tokens": 9088,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 1748
+        },
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 11987,
+            "completion_tokens": 112,
+            "total_tokens": 12099,
+            "prompt_tokens_details": {
+              "cached_tokens": 9088,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 1691
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 329,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 891,
+            "output_tokens": 221,
+            "cost": 0.000037422,
+            "inputTokens": 891
+          },
+          "costUsd": 0.000037422
+        }
+      ],
+      "outputTokens": 216,
+      "cachedTokens": 18176,
+      "updates": null,
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 1,
+      "case": "thresholds",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Color code GPU utilization on both the metric and chart: green below 70%, yellow from 70%, red from 90%. Preserve everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "green",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 2917,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12650,
+            "completion_tokens": 183,
+            "total_tokens": 12833,
+            "prompt_tokens_details": {
+              "cached_tokens": 12647,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2500
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 382,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 887,
+            "output_tokens": 223,
+            "cost": 0.000037254,
+            "inputTokens": 887
+          },
+          "costUsd": 0.000037254
+        }
+      ],
+      "outputTokens": 183,
+      "cachedTokens": 12647,
+      "updates": [
+        {
+          "id": "gpu_util_metric",
+          "key": "color",
+          "value": "success"
+        },
+        {
+          "id": "gpu_util_metric",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "color",
+          "value": "success"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 1,
+      "case": "thresholds",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "Color code GPU utilization on both the metric and chart: green below 70%, yellow from 70%, red from 90%. Preserve everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "green",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 2783,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 12652,
+            "completion_tokens": 174,
+            "total_tokens": 12826,
+            "prompt_tokens_details": {
+              "cached_tokens": 12416,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2335
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 413,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 887,
+            "output_tokens": 223,
+            "cost": 0.000037254,
+            "inputTokens": 887
+          },
+          "costUsd": 0.000037254
+        }
+      ],
+      "outputTokens": 174,
+      "cachedTokens": 12416,
+      "updates": [
+        {
+          "id": "gpu_util_metric",
+          "key": "color",
+          "value": "foreground"
+        },
+        {
+          "id": "gpu_util_metric",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "color",
+          "value": "foreground"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 1,
+      "case": "thresholds",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Color code GPU utilization on both the metric and chart: green below 70%, yellow from 70%, red from 90%. Preserve everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "green",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 4030,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12449,
+            "completion_tokens": 265,
+            "total_tokens": 12714,
+            "prompt_tokens_details": {
+              "cached_tokens": 12446,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3707
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 287,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 887,
+            "output_tokens": 223,
+            "cost": 0.000037254,
+            "inputTokens": 887
+          },
+          "costUsd": 0.000037254
+        }
+      ],
+      "outputTokens": 265,
+      "cachedTokens": 12446,
+      "updates": [],
+      "replacementWidgets": 2
+    },
+    {
+      "repeat": 1,
+      "case": "table-rows",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Replace only the alerts table rows with [[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]. Preserve its headers, styles, and everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 2555,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12660,
+            "completion_tokens": 96,
+            "total_tokens": 12756,
+            "prompt_tokens_details": {
+              "cached_tokens": 12657,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2105
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 416,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 895,
+            "output_tokens": 223,
+            "cost": 0.00003759,
+            "inputTokens": 895
+          },
+          "costUsd": 0.00003759
+        }
+      ],
+      "outputTokens": 96,
+      "cachedTokens": 12657,
+      "updates": [
+        {
+          "id": "alerts_table",
+          "key": "rows",
+          "json": "[[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 1,
+      "case": "table-rows",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "Replace only the alerts table rows with [[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]. Preserve its headers, styles, and everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 2074,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 12662,
+            "completion_tokens": 87,
+            "total_tokens": 12749,
+            "prompt_tokens_details": {
+              "cached_tokens": 12416,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 1681
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 360,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 895,
+            "output_tokens": 223,
+            "cost": 0.00003759,
+            "inputTokens": 895
+          },
+          "costUsd": 0.00003759
+        }
+      ],
+      "outputTokens": 87,
+      "cachedTokens": 12416,
+      "updates": [
+        {
+          "id": "alerts_table",
+          "key": "rows",
+          "json": "[[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 1,
+      "case": "table-rows",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Replace only the alerts table rows with [[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]. Preserve its headers, styles, and everything else.",
+      "pass": false,
+      "error": "Generated content failed validation: Widget generated-alerts_table: widget: Unrecognized key: \"props\"",
+      "elapsedMs": 5697,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12459,
+            "completion_tokens": 76,
+            "total_tokens": 12535,
+            "prompt_tokens_details": {
+              "cached_tokens": 12456,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2446
+        },
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12870,
+            "completion_tokens": 210,
+            "total_tokens": 13080,
+            "prompt_tokens_details": {
+              "cached_tokens": 10109,
+              "cache_write_tokens": 2758,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2902
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 331,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 895,
+            "output_tokens": 223,
+            "cost": 0.00003759,
+            "inputTokens": 895
+          },
+          "costUsd": 0.00003759
+        }
+      ],
+      "outputTokens": 286,
+      "cachedTokens": 22565,
+      "updates": null,
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 1,
+      "case": "table-columns",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "In the alerts table, set the severity column to 7 cells, the message column to flexible width (0), and the node column to 9 cells. Preserve their existing colors and alignment and all other content/layout.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "blue",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 2813,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12664,
+            "completion_tokens": 127,
+            "total_tokens": 12791,
+            "prompt_tokens_details": {
+              "cached_tokens": 12661,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2392
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 387,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 898,
+            "output_tokens": 223,
+            "cost": 0.000037716,
+            "inputTokens": 898
+          },
+          "costUsd": 0.000037716
+        }
+      ],
+      "outputTokens": 127,
+      "cachedTokens": 12661,
+      "updates": [
+        {
+          "id": "alerts_table",
+          "key": "columnStyles",
+          "json": "[{\"align\":\"left\",\"color\":\"warning\",\"width\":7},{\"align\":\"left\",\"color\":\"foreground\",\"width\":0},{\"align\":\"left\",\"color\":\"muted\",\"width\":9}]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 1,
+      "case": "table-columns",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "In the alerts table, set the severity column to 7 cells, the message column to flexible width (0), and the node column to 9 cells. Preserve their existing colors and alignment and all other content/layout.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "blue",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3246,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 12666,
+            "completion_tokens": 211,
+            "total_tokens": 12877,
+            "prompt_tokens_details": {
+              "cached_tokens": 12544,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2835
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 373,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 898,
+            "output_tokens": 223,
+            "cost": 0.000037716,
+            "inputTokens": 898
+          },
+          "costUsd": 0.000037716
+        }
+      ],
+      "outputTokens": 211,
+      "cachedTokens": 12544,
+      "updates": [],
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 1,
+      "case": "table-columns",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "In the alerts table, set the severity column to 7 cells, the message column to flexible width (0), and the node column to 9 cells. Preserve their existing colors and alignment and all other content/layout.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "blue",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 4022,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12463,
+            "completion_tokens": 243,
+            "total_tokens": 12706,
+            "prompt_tokens_details": {
+              "cached_tokens": 12460,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3688
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 301,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 898,
+            "output_tokens": 223,
+            "cost": 0.000037716,
+            "inputTokens": 898
+          },
+          "costUsd": 0.000037716
+        }
+      ],
+      "outputTokens": 243,
+      "cachedTokens": 12460,
+      "updates": [],
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 1,
+      "case": "rail-width",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Make the channel rail exactly 26 cells wide. Let the chat area fill the remaining width. Preserve the existing one-cell gap, all content, actions and state.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [
+        {
+          "code": "text-contrast",
+          "id": "root",
+          "message": "muted on surface: contrast 4.43:1, recommended at least 4.5:1.",
+          "severity": "warning"
+        }
+      ],
+      "design": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "elapsedMs": 3564,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 11532,
+            "completion_tokens": 211,
+            "total_tokens": 11743,
+            "prompt_tokens_details": {
+              "cached_tokens": 11529,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3148
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 396,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 891,
+            "output_tokens": 221,
+            "cost": 0.000037422,
+            "inputTokens": 891
+          },
+          "costUsd": 0.000037422
+        }
+      ],
+      "outputTokens": 211,
+      "cachedTokens": 11529,
+      "updates": [
+        {
+          "id": "channel-rail",
+          "key": "width",
+          "value": 26
+        },
+        {
+          "id": "channel-rail",
+          "key": "maxWidth",
+          "value": 26
+        },
+        {
+          "id": "chat-area",
+          "key": "width",
+          "value": "fill"
+        },
+        {
+          "id": "chat-area",
+          "key": "maxWidth",
+          "value": 0
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 1,
+      "case": "rail-width",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "Make the channel rail exactly 26 cells wide. Let the chat area fill the remaining width. Preserve the existing one-cell gap, all content, actions and state.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [
+        {
+          "code": "text-contrast",
+          "id": "root",
+          "message": "muted on surface: contrast 4.43:1, recommended at least 4.5:1.",
+          "severity": "warning"
+        }
+      ],
+      "design": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "elapsedMs": 4088,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 11534,
+            "completion_tokens": 115,
+            "total_tokens": 11649,
+            "prompt_tokens_details": {
+              "cached_tokens": 11392,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 1835
+        },
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 11999,
+            "completion_tokens": 114,
+            "total_tokens": 12113,
+            "prompt_tokens_details": {
+              "cached_tokens": 11136,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 1733
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 483,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 891,
+            "output_tokens": 221,
+            "cost": 0.000037422,
+            "inputTokens": 891
+          },
+          "costUsd": 0.000037422
+        }
+      ],
+      "outputTokens": 229,
+      "cachedTokens": 22528,
+      "updates": null,
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 1,
+      "case": "rail-width",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Make the channel rail exactly 26 cells wide. Let the chat area fill the remaining width. Preserve the existing one-cell gap, all content, actions and state.",
+      "pass": false,
+      "error": "Generated content failed validation: Widget generated-channel-rail: widget: Unrecognized key: \"props\"",
+      "elapsedMs": 6739,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 11331,
+            "completion_tokens": 229,
+            "total_tokens": 11560,
+            "prompt_tokens_details": {
+              "cached_tokens": 11328,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3368
+        },
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 11895,
+            "completion_tokens": 149,
+            "total_tokens": 12044,
+            "prompt_tokens_details": {
+              "cached_tokens": 10109,
+              "cache_write_tokens": 1783,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2949
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 409,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 891,
+            "output_tokens": 221,
+            "cost": 0.000037422,
+            "inputTokens": 891
+          },
+          "costUsd": 0.000037422
+        }
+      ],
+      "outputTokens": 378,
+      "cachedTokens": 21437,
+      "updates": null,
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 2,
+      "case": "thresholds",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "Color code GPU utilization on both the metric and chart: green below 70%, yellow from 70%, red from 90%. Preserve everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "green",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3197,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 12652,
+            "completion_tokens": 180,
+            "total_tokens": 12832,
+            "prompt_tokens_details": {
+              "cached_tokens": 12416,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2723
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 439,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 887,
+            "output_tokens": 223,
+            "cost": 0.000037254,
+            "inputTokens": 887
+          },
+          "costUsd": 0.000037254
+        }
+      ],
+      "outputTokens": 180,
+      "cachedTokens": 12416,
+      "updates": [
+        {
+          "id": "gpu_util_metric",
+          "key": "color",
+          "value": "foreground"
+        },
+        {
+          "id": "gpu_util_metric",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "color",
+          "value": "foreground"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 2,
+      "case": "thresholds",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Color code GPU utilization on both the metric and chart: green below 70%, yellow from 70%, red from 90%. Preserve everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "green",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 4344,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12449,
+            "completion_tokens": 262,
+            "total_tokens": 12711,
+            "prompt_tokens_details": {
+              "cached_tokens": 12446,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3952
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 356,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 887,
+            "output_tokens": 223,
+            "cost": 0.000037254,
+            "inputTokens": 887
+          },
+          "costUsd": 0.000037254
+        }
+      ],
+      "outputTokens": 262,
+      "cachedTokens": 12446,
+      "updates": [],
+      "replacementWidgets": 2
+    },
+    {
+      "repeat": 2,
+      "case": "thresholds",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Color code GPU utilization on both the metric and chart: green below 70%, yellow from 70%, red from 90%. Preserve everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "green",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3231,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12650,
+            "completion_tokens": 188,
+            "total_tokens": 12838,
+            "prompt_tokens_details": {
+              "cached_tokens": 12647,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2783
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 414,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 887,
+            "output_tokens": 223,
+            "cost": 0.000037254,
+            "inputTokens": 887
+          },
+          "costUsd": 0.000037254
+        }
+      ],
+      "outputTokens": 188,
+      "cachedTokens": 12647,
+      "updates": [
+        {
+          "id": "gpu_util_metric",
+          "key": "color",
+          "value": "success"
+        },
+        {
+          "id": "gpu_util_metric",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "color",
+          "value": "success"
+        },
+        {
+          "id": "utilization_chart",
+          "key": "thresholds",
+          "json": "[{\"min\":0,\"color\":\"success\"},{\"min\":70,\"color\":\"warning\"},{\"min\":90,\"color\":\"danger\"}]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 2,
+      "case": "table-rows",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "Replace only the alerts table rows with [[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]. Preserve its headers, styles, and everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 1833,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 12662,
+            "completion_tokens": 85,
+            "total_tokens": 12747,
+            "prompt_tokens_details": {
+              "cached_tokens": 12416,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 1531
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 269,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 895,
+            "output_tokens": 223,
+            "cost": 0.00003759,
+            "inputTokens": 895
+          },
+          "costUsd": 0.00003759
+        }
+      ],
+      "outputTokens": 85,
+      "cachedTokens": 12416,
+      "updates": [
+        {
+          "id": "alerts_table",
+          "key": "rows",
+          "json": "[[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 2,
+      "case": "table-rows",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Replace only the alerts table rows with [[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]. Preserve its headers, styles, and everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3348,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12459,
+            "completion_tokens": 208,
+            "total_tokens": 12667,
+            "prompt_tokens_details": {
+              "cached_tokens": 12456,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2863
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 451,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 895,
+            "output_tokens": 223,
+            "cost": 0.00003759,
+            "inputTokens": 895
+          },
+          "costUsd": 0.00003759
+        }
+      ],
+      "outputTokens": 208,
+      "cachedTokens": 12456,
+      "updates": [],
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 2,
+      "case": "table-rows",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Replace only the alerts table rows with [[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]. Preserve its headers, styles, and everything else.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "amber",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 2458,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12660,
+            "completion_tokens": 99,
+            "total_tokens": 12759,
+            "prompt_tokens_details": {
+              "cached_tokens": 12657,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2116
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 308,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 895,
+            "output_tokens": 223,
+            "cost": 0.00003759,
+            "inputTokens": 895
+          },
+          "costUsd": 0.00003759
+        }
+      ],
+      "outputTokens": 99,
+      "cachedTokens": 12657,
+      "updates": [
+        {
+          "id": "alerts_table",
+          "key": "rows",
+          "json": "[[\"INFO\",\"All nodes ready\",\"ALL\"],[\"WARN\",\"Check cooling\",\"SPARK-07\"]]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 2,
+      "case": "table-columns",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "In the alerts table, set the severity column to 7 cells, the message column to flexible width (0), and the node column to 9 cells. Preserve their existing colors and alignment and all other content/layout.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "blue",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3184,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 12666,
+            "completion_tokens": 220,
+            "total_tokens": 12886,
+            "prompt_tokens_details": {
+              "cached_tokens": 12544,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2736
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 414,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 898,
+            "output_tokens": 223,
+            "cost": 0.000037716,
+            "inputTokens": 898
+          },
+          "costUsd": 0.000037716
+        }
+      ],
+      "outputTokens": 220,
+      "cachedTokens": 12544,
+      "updates": [],
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 2,
+      "case": "table-columns",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "In the alerts table, set the severity column to 7 cells, the message column to flexible width (0), and the node column to 9 cells. Preserve their existing colors and alignment and all other content/layout.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "blue",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 3541,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12463,
+            "completion_tokens": 250,
+            "total_tokens": 12713,
+            "prompt_tokens_details": {
+              "cached_tokens": 12460,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3148
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 356,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 898,
+            "output_tokens": 223,
+            "cost": 0.000037716,
+            "inputTokens": 898
+          },
+          "costUsd": 0.000037716
+        }
+      ],
+      "outputTokens": 250,
+      "cachedTokens": 12460,
+      "updates": [],
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 2,
+      "case": "table-columns",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "In the alerts table, set the severity column to 7 cells, the message column to flexible width (0), and the node column to 9 cells. Preserve their existing colors and alignment and all other content/layout.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [],
+      "design": {
+        "change": "preserve",
+        "canvas": "dark",
+        "hue": "blue",
+        "border": "plain",
+        "density": "comfortable",
+        "emphasis": "bold"
+      },
+      "elapsedMs": 2460,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 12664,
+            "completion_tokens": 129,
+            "total_tokens": 12793,
+            "prompt_tokens_details": {
+              "cached_tokens": 12661,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 1990
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 436,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 898,
+            "output_tokens": 223,
+            "cost": 0.000037716,
+            "inputTokens": 898
+          },
+          "costUsd": 0.000037716
+        }
+      ],
+      "outputTokens": 129,
+      "cachedTokens": 12661,
+      "updates": [
+        {
+          "id": "alerts_table",
+          "key": "columnStyles",
+          "json": "[{\"align\":\"left\",\"color\":\"warning\",\"width\":7},{\"align\":\"left\",\"color\":\"foreground\",\"width\":0},{\"align\":\"left\",\"color\":\"muted\",\"width\":9}]"
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 2,
+      "case": "rail-width",
+      "variant": "patch-mini",
+      "model": "gpt-4.1-mini",
+      "prompt": "Make the channel rail exactly 26 cells wide. Let the chat area fill the remaining width. Preserve the existing one-cell gap, all content, actions and state.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [
+        {
+          "code": "text-contrast",
+          "id": "root",
+          "message": "muted on surface: contrast 4.43:1, recommended at least 4.5:1.",
+          "severity": "warning"
+        }
+      ],
+      "design": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "elapsedMs": 2929,
+      "calls": [
+        {
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "prompt_tokens": 11534,
+            "completion_tokens": 116,
+            "total_tokens": 11650,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2304
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 605,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 891,
+            "output_tokens": 221,
+            "cost": 0.000037422,
+            "inputTokens": 891
+          },
+          "costUsd": 0.000037422
+        }
+      ],
+      "outputTokens": 116,
+      "cachedTokens": 0,
+      "updates": [
+        {
+          "id": "channel-rail",
+          "key": "width",
+          "value": 26
+        },
+        {
+          "id": "channel-rail",
+          "key": "maxWidth",
+          "value": 26
+        },
+        {
+          "id": "chat-area",
+          "key": "width",
+          "value": "fill"
+        },
+        {
+          "id": "chat-area",
+          "key": "maxWidth",
+          "value": 0
+        }
+      ],
+      "replacementWidgets": 0
+    },
+    {
+      "repeat": 2,
+      "case": "rail-width",
+      "variant": "baseline-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Make the channel rail exactly 26 cells wide. Let the chat area fill the remaining width. Preserve the existing one-cell gap, all content, actions and state.",
+      "pass": false,
+      "error": "Generated content failed validation: Widget generated-channel-rail: widget: Unrecognized key: \"props\"",
+      "elapsedMs": 8053,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 11331,
+            "completion_tokens": 164,
+            "total_tokens": 11495,
+            "prompt_tokens_details": {
+              "cached_tokens": 11328,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2798
+        },
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 11830,
+            "completion_tokens": 145,
+            "total_tokens": 11975,
+            "prompt_tokens_details": {
+              "cached_tokens": 11827,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 2519
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 2724,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 891,
+            "output_tokens": 221,
+            "cost": 0.000037422,
+            "inputTokens": 891
+          },
+          "costUsd": 0.000037422
+        }
+      ],
+      "outputTokens": 309,
+      "cachedTokens": 23155,
+      "updates": null,
+      "replacementWidgets": 1
+    },
+    {
+      "repeat": 2,
+      "case": "rail-width",
+      "variant": "patch-luna",
+      "model": "gpt-5.6-luna",
+      "prompt": "Make the channel rail exactly 26 cells wide. Let the chat area fill the remaining width. Preserve the existing one-cell gap, all content, actions and state.",
+      "pass": true,
+      "requested": true,
+      "preserved": true,
+      "audits": [
+        {
+          "code": "text-contrast",
+          "id": "root",
+          "message": "muted on surface: contrast 4.43:1, recommended at least 4.5:1.",
+          "severity": "warning"
+        }
+      ],
+      "design": {
+        "change": "preserve",
+        "canvas": "light",
+        "hue": "rose",
+        "border": "rounded",
+        "density": "compact",
+        "emphasis": "quiet"
+      },
+      "elapsedMs": 3544,
+      "calls": [
+        {
+          "model": "gpt-5.6-luna",
+          "usage": {
+            "prompt_tokens": 11532,
+            "completion_tokens": 188,
+            "total_tokens": 11720,
+            "prompt_tokens_details": {
+              "cached_tokens": 11529,
+              "cache_write_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "elapsedMs": 3165
+        }
+      ],
+      "jevCalls": [
+        {
+          "elapsedMs": 357,
+          "model": "typesafe/jev-1.13-20260917",
+          "usage": {
+            "input_tokens": 891,
+            "output_tokens": 221,
+            "cost": 0.000037422,
+            "inputTokens": 891
+          },
+          "costUsd": 0.000037422
+        }
+      ],
+      "outputTokens": 188,
+      "cachedTokens": 11529,
+      "updates": [
+        {
+          "id": "channel-rail",
+          "key": "width",
+          "value": 26
+        },
+        {
+          "id": "channel-rail",
+          "key": "maxWidth",
+          "value": 26
+        }
+      ],
+      "replacementWidgets": 0
+    }
+  ]
+}

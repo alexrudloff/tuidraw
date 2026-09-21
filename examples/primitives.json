@@ -1,0 +1,167 @@
+{
+  "root": "root",
+  "state": {
+    "count": "2",
+    "sides": "6",
+    "modifier": "3",
+    "result": "Ready"
+  },
+  "elements": {
+    "root": {
+      "type": "Column",
+      "props": {},
+      "children": [
+        "heading",
+        "inputs",
+        "result",
+        "buttons"
+      ]
+    },
+    "heading": {
+      "type": "Text",
+      "props": {
+        "text": "Composed from primitives",
+        "muted": false
+      }
+    },
+    "inputs": {
+      "type": "Row",
+      "props": {},
+      "children": [
+        "count",
+        "sides",
+        "modifier"
+      ]
+    },
+    "count": {
+      "type": "Input",
+      "props": {
+        "label": "Count",
+        "value": {
+          "$bindState": "/count"
+        }
+      }
+    },
+    "sides": {
+      "type": "Input",
+      "props": {
+        "label": "Maximum",
+        "value": {
+          "$bindState": "/sides"
+        }
+      }
+    },
+    "modifier": {
+      "type": "Input",
+      "props": {
+        "label": "Modifier",
+        "value": {
+          "$bindState": "/modifier"
+        }
+      }
+    },
+    "result": {
+      "type": "Text",
+      "props": {
+        "text": {
+          "$state": "/result"
+        },
+        "muted": false
+      }
+    },
+    "buttons": {
+      "type": "Grid",
+      "props": {
+        "columns": 3
+      },
+      "children": [
+        "sample",
+        "increment",
+        "clear"
+      ]
+    },
+    "sample": {
+      "type": "Button",
+      "props": {
+        "label": "Sample + modifier",
+        "intent": "primary",
+        "disabled": false
+      },
+      "on": {
+        "press": [
+          {
+            "action": "compute",
+            "params": {
+              "statePath": "/result",
+              "op": "randomInt",
+              "args": [
+                1,
+                {
+                  "$state": "/sides"
+                },
+                {
+                  "$state": "/count"
+                }
+              ]
+            }
+          },
+          {
+            "action": "compute",
+            "params": {
+              "statePath": "/result",
+              "op": "add",
+              "args": [
+                {
+                  "$state": "/result"
+                },
+                {
+                  "$state": "/modifier"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "increment": {
+      "type": "Button",
+      "props": {
+        "label": "Count +1",
+        "intent": "neutral",
+        "disabled": false
+      },
+      "on": {
+        "press": {
+          "action": "compute",
+          "params": {
+            "statePath": "/count",
+            "op": "add",
+            "args": [
+              {
+                "$state": "/count"
+              },
+              1
+            ]
+          }
+        }
+      }
+    },
+    "clear": {
+      "type": "Button",
+      "props": {
+        "label": "Clear result",
+        "intent": "neutral",
+        "disabled": false
+      },
+      "on": {
+        "press": {
+          "action": "setState",
+          "params": {
+            "statePath": "/result",
+            "value": "Ready"
+          }
+        }
+      }
+    }
+  }
+}

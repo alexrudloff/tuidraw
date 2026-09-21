@@ -1,0 +1,318 @@
+{
+  "root": "node_0",
+  "elements": {
+    "node_0": {
+      "type": "Column",
+      "props": {},
+      "children": [
+        "node_1",
+        "node_12",
+        "node_2",
+        "node_4",
+        "node_3",
+        "node_5",
+        "node_6",
+        "node_13"
+      ]
+    },
+    "node_1": {
+      "type": "Scene",
+      "props": {
+        "title": "Tabletop Dice Roller",
+        "rows": [
+          "+--------+",
+          "| . o o  |",
+          "|  \\|/   |",
+          "|  / \\   |",
+          "+--------+"
+        ],
+        "legend": [
+          {
+            "symbol": "o",
+            "label": "Die pips",
+            "color": "#FFD166"
+          },
+          {
+            "symbol": ".",
+            "label": "Dice highlight",
+            "color": "#9B8CFF"
+          },
+          {
+            "symbol": "|",
+            "label": "Dice edge",
+            "color": "#06D6A0"
+          }
+        ]
+      },
+      "children": []
+    },
+    "node_2": {
+      "type": "BigText",
+      "props": {
+        "text": "Dice Roll",
+        "font": "box"
+      },
+      "children": []
+    },
+    "node_3": {
+      "type": "Input",
+      "props": {
+        "label": "Count",
+        "value": {
+          "$bindState": "/countStr"
+        }
+      },
+      "children": []
+    },
+    "node_4": {
+      "type": "Input",
+      "props": {
+        "label": "Die Size (dN)",
+        "value": {
+          "$bindState": "/dieSizeStr"
+        }
+      },
+      "children": []
+    },
+    "node_5": {
+      "type": "Input",
+      "props": {
+        "label": "Modifier",
+        "value": {
+          "$bindState": "/modifierStr"
+        }
+      },
+      "children": []
+    },
+    "node_6": {
+      "type": "Grid",
+      "props": {
+        "columns": 3
+      },
+      "children": [
+        "node_7",
+        "node_9",
+        "node_11",
+        "node_8",
+        "node_10"
+      ]
+    },
+    "node_7": {
+      "type": "Button",
+      "props": {
+        "label": "Roll",
+        "intent": "primary",
+        "disabled": false
+      },
+      "on": {
+        "press": [
+          {
+            "action": "setState",
+            "params": {
+              "statePath": "/rollExprCount",
+              "value": {
+                "$state": "/countStr"
+              }
+            }
+          },
+          {
+            "action": "setState",
+            "params": {
+              "statePath": "/rollExprDieSize",
+              "value": {
+                "$state": "/dieSizeStr"
+              }
+            }
+          },
+          {
+            "action": "setState",
+            "params": {
+              "statePath": "/rollExprModifier",
+              "value": {
+                "$state": "/modifierStr"
+              }
+            }
+          },
+          {
+            "action": "compute",
+            "params": {
+              "statePath": "/result",
+              "op": "randomInt",
+              "args": [
+                1,
+                {
+                  "$state": "/rollExprDieSize"
+                },
+                {
+                  "$state": "/countStr"
+                }
+              ]
+            }
+          },
+          {
+            "action": "compute",
+            "params": {
+              "statePath": "/total",
+              "op": "multiply",
+              "args": [
+                {
+                  "$state": "/result"
+                },
+                1
+              ]
+            }
+          },
+          {
+            "action": "compute",
+            "params": {
+              "statePath": "/total",
+              "op": "add",
+              "args": [
+                {
+                  "$state": "/total"
+                },
+                {
+                  "$state": "/rollExprModifier"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "children": []
+    },
+    "node_8": {
+      "type": "Button",
+      "props": {
+        "label": "Clear",
+        "intent": "warning",
+        "disabled": false
+      },
+      "on": {
+        "press": [
+          {
+            "action": "setState",
+            "params": {
+              "statePath": "/result",
+              "value": ""
+            }
+          },
+          {
+            "action": "setState",
+            "params": {
+              "statePath": "/total",
+              "value": 0
+            }
+          }
+        ]
+      },
+      "children": []
+    },
+    "node_9": {
+      "type": "Button",
+      "props": {
+        "label": "Modifier -1",
+        "intent": "neutral",
+        "disabled": false
+      },
+      "on": {
+        "press": [
+          {
+            "action": "compute",
+            "params": {
+              "statePath": "/modifierStr",
+              "op": "subtract",
+              "args": [
+                {
+                  "$state": "/modifierStr"
+                },
+                1
+              ]
+            }
+          }
+        ]
+      },
+      "children": []
+    },
+    "node_10": {
+      "type": "Button",
+      "props": {
+        "label": "Modifier +1",
+        "intent": "neutral",
+        "disabled": false
+      },
+      "on": {
+        "press": [
+          {
+            "action": "compute",
+            "params": {
+              "statePath": "/modifierStr",
+              "op": "add",
+              "args": [
+                {
+                  "$state": "/modifierStr"
+                },
+                1
+              ]
+            }
+          }
+        ]
+      },
+      "children": []
+    },
+    "node_11": {
+      "type": "Button",
+      "props": {
+        "label": "Modifier Reset",
+        "intent": "neutral",
+        "disabled": false
+      },
+      "on": {
+        "press": [
+          {
+            "action": "setState",
+            "params": {
+              "statePath": "/modifierStr",
+              "value": "0"
+            }
+          }
+        ]
+      },
+      "children": []
+    },
+    "node_12": {
+      "type": "Text",
+      "props": {
+        "text": {
+          "$state": "/result"
+        },
+        "muted": false
+      },
+      "children": []
+    },
+    "node_13": {
+      "type": "Metric",
+      "props": {
+        "label": "Total",
+        "value": {
+          "$state": "/total"
+        }
+      },
+      "children": []
+    }
+  },
+  "state": {
+    "count": 2,
+    "dieSize": 6,
+    "modifier": 0,
+    "result": "",
+    "total": 0,
+    "historyText": "",
+    "countStr": "2",
+    "dieSizeStr": "6",
+    "modifierStr": "0",
+    "rollExprCount": "2",
+    "rollExprDieSize": "6",
+    "rollExprModifier": "0"
+  }
+}

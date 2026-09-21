@@ -1,0 +1,82 @@
+{
+  "root": "root",
+  "state": {
+    "status": "Docked at Terra. Cargo bay ready."
+  },
+  "elements": {
+    "root": {
+      "type": "Column",
+      "props": {},
+      "children": [
+        "art",
+        "readouts",
+        "status",
+        "launch"
+      ]
+    },
+    "art": {
+      "type": "AnsiArt",
+      "props": {
+        "title": "TRADEWARS / TERRA ORBIT",
+        "content": "\u001b[38;2;75;145;190m    .                       .                    +\u001b[0m\n\u001b[38;2;75;145;190m              .                      .            \u001b[0m\n\u001b[38;2;80;215;235m                         /\\                       \u001b[0m\n\u001b[38;2;80;215;235m                        /  \\            .         \u001b[0m\n\u001b[38;2;80;215;235m           ____________/ /\\ \\____________         \u001b[0m\n\u001b[38;2;80;215;235m          /___________/ /  \\ \\___________\\        \u001b[0m\n\u001b[38;2;80;215;235m       ==|    []      / /____\\ \\      []    |==     \u001b[0m\n\u001b[38;2;80;215;235m          \\_________/  | [] |  \\_________/        \u001b[0m\n\u001b[38;2;80;215;235m                  /___|____|___\\                  \u001b[0m\n\u001b[38;2;80;215;235m                    ||  ||  ||                    \u001b[0m\n\u001b[38;2;80;215;235m                    ::  ::  ::          .         \u001b[0m\n\u001b[38;2;80;215;235m    +               ..  ..  ..                     \u001b[0m\n\u001b[38;2;255;176;0m                 MERCHANT CRUISER                  \u001b[0m",
+        "height": 16
+      }
+    },
+    "readouts": {
+      "type": "Row",
+      "props": {},
+      "children": [
+        "credits",
+        "cargo",
+        "hull"
+      ]
+    },
+    "credits": {
+      "type": "Metric",
+      "props": {
+        "label": "CREDITS",
+        "value": "48,200"
+      }
+    },
+    "cargo": {
+      "type": "Metric",
+      "props": {
+        "label": "CARGO",
+        "value": "36 / 80"
+      }
+    },
+    "hull": {
+      "type": "Gauge",
+      "props": {
+        "title": "Hull integrity",
+        "value": 92
+      }
+    },
+    "status": {
+      "type": "Text",
+      "props": {
+        "text": {
+          "$state": "/status"
+        },
+        "muted": false
+      }
+    },
+    "launch": {
+      "type": "Button",
+      "props": {
+        "label": "Depart station",
+        "intent": "primary",
+        "disabled": false
+      },
+      "on": {
+        "press": {
+          "action": "setState",
+          "params": {
+            "statePath": "/status",
+            "value": "Departure clearance granted. Sector 42 ahead."
+          }
+        }
+      }
+    }
+  }
+}

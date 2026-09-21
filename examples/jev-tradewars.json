@@ -1,0 +1,168 @@
+{
+  "root": "node_0",
+  "elements": {
+    "node_0": {
+      "type": "Column",
+      "props": {},
+      "children": [
+        "node_1",
+        "node_2",
+        "node_6",
+        "node_8"
+      ]
+    },
+    "node_1": {
+      "type": "Row",
+      "props": {},
+      "children": [
+        "node_3",
+        "node_4",
+        "node_5",
+        "node_7"
+      ]
+    },
+    "node_2": {
+      "type": "Scene",
+      "props": {
+        "title": "Sector Map: Nadir Corridor",
+        "rows": [
+          "  . . .  .  ..  .  *  ..  .   .  .  .  .  ",
+          " ..  .*..  .  .   .  .  ( )  .  .   .  .   ",
+          " .  .  .  .  =====  .  .  .  .  .  .  .   ",
+          "      .  ~~~  [RELAY]----==----*  .    ",
+          "  .  *   .  .  .   \\\\ passage \\\\   .  .   .",
+          " .  .  .   *  ( * )  .  [ARGO]  .  .   .  .",
+          "   .  ..  .  ===|==|===  .  .  .  .   .  .  .   ",
+          "  .  .   *   .  /  |  \\  .  .  *  .  .  .   .",
+          " .   .  .  ~~~  /  |   \\ ~~~  .  .  .  .  .  ",
+          "    .  [YOU]---/===|===\\---[ENEMY]   .  .",
+          "  .   .  .  .  .   .  *  .  .  .  .  .  .",
+          "   .  *   .  (K-9)  .  .  [TRADE]  .  .  .  . "
+        ],
+        "legend": [
+          {
+            "symbol": "*",
+            "label": "Planets",
+            "color": "#7AA2F7"
+          },
+          {
+            "symbol": "(",
+            "label": "Anomaly zone",
+            "color": "#FDCB6E"
+          },
+          {
+            "symbol": "[",
+            "label": "Stations",
+            "color": "#9ECE6A"
+          },
+          {
+            "symbol": "~",
+            "label": "Nebula lanes",
+            "color": "#C099FF"
+          },
+          {
+            "symbol": "=",
+            "label": "Main routes",
+            "color": "#56B6C2"
+          },
+          {
+            "symbol": "|",
+            "label": "Junctions",
+            "color": "#E06C75"
+          },
+          {
+            "symbol": "#",
+            "label": "Active ship",
+            "color": "#FFD166"
+          },
+          {
+            "symbol": "@",
+            "label": "Your position",
+            "color": "#61AFEF"
+          }
+        ]
+      },
+      "children": []
+    },
+    "node_3": {
+      "type": "Gauge",
+      "props": {
+        "title": "Hull Integrity",
+        "value": 93
+      },
+      "children": []
+    },
+    "node_4": {
+      "type": "Gauge",
+      "props": {
+        "title": "Fuel Level",
+        "value": 62
+      },
+      "children": []
+    },
+    "node_5": {
+      "type": "Metric",
+      "props": {
+        "label": "Cargo Mass (t)",
+        "value": "18.4"
+      },
+      "children": []
+    },
+    "node_6": {
+      "type": "Select",
+      "props": {
+        "title": "Destination Selector",
+        "options": [
+          "A-17: Nadir Corridor",
+          "B-04: Cinder Chain",
+          "C-12: Lumen Arcade",
+          "D-06: Drift Refuge",
+          "E-19: Glass Maw"
+        ],
+        "value": {
+          "$bindState": "/sectorSelection"
+        }
+      },
+      "children": []
+    },
+    "node_7": {
+      "type": "Button",
+      "props": {
+        "label": "Help",
+        "intent": "primary",
+        "disabled": false
+      },
+      "on": {
+        "press": {
+          "action": "setState",
+          "params": {
+            "statePath": "/helpOpen",
+            "value": true
+          }
+        }
+      },
+      "children": []
+    },
+    "node_8": {
+      "type": "Popup",
+      "props": {
+        "title": "Help: Tradewars Interface Guide",
+        "label": "Help",
+        "body": "Use the destination selector to set your next jump. The sector map shows routes (=), junctions (|), stations ([...]) and your marker ([YOU]).\n\nShip status gauges update as you manage hull/fuel. Difficulty changes NPC behavior pacing.\n\nTips:\n- Plan jumps along main routes.\n- Nebula lanes (~) often hide anomalies.\n- Junctions are frequent encounter points.",
+        "open": {
+          "$bindState": "/helpOpen"
+        }
+      },
+      "children": []
+    }
+  },
+  "state": {
+    "sectorSelection": "A-17: Nadir Corridor",
+    "helpOpen": false,
+    "shipStatus": "Docked at Kestrel Relay. Scans ready.",
+    "fuelLevel": 62,
+    "hullIntegrity": 93,
+    "cargoMass": 18.4,
+    "difficulty": "Standard"
+  }
+}

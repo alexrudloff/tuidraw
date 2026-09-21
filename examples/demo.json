@@ -1,0 +1,151 @@
+{
+  "root": "node_0",
+  "elements": {
+    "node_0": {
+      "type": "Column",
+      "props": {},
+      "children": [
+        "node_1",
+        "node_2",
+        "node_3",
+        "node_4",
+        "node_5",
+        "node_6",
+        "node_7",
+        "node_8"
+      ]
+    },
+    "node_1": {
+      "type": "Text",
+      "props": {
+        "text": "OPERATIONS OVERVIEW"
+      },
+      "children": []
+    },
+    "node_2": {
+      "type": "Metric",
+      "props": {
+        "label": "Revenue",
+        "value": {
+          "$state": "/revenue"
+        }
+      },
+      "children": []
+    },
+    "node_3": {
+      "type": "Gauge",
+      "props": {
+        "title": "CPU utilization",
+        "value": {
+          "$state": "/cpu"
+        }
+      },
+      "children": []
+    },
+    "node_4": {
+      "type": "Sparkline",
+      "props": {
+        "title": "Traffic / last 12 hours",
+        "data": {
+          "$state": "/traffic"
+        }
+      },
+      "children": []
+    },
+    "node_5": {
+      "type": "Table",
+      "props": {
+        "title": "Services",
+        "headers": [
+          "Service",
+          "Status",
+          "Latency"
+        ],
+        "rows": {
+          "$state": "/services"
+        }
+      },
+      "children": []
+    },
+    "node_6": {
+      "type": "Input",
+      "props": {
+        "label": "Display name",
+        "value": {
+          "$bindState": "/name"
+        }
+      },
+      "children": []
+    },
+    "node_7": {
+      "type": "Button",
+      "props": {
+        "label": "Save changes"
+      },
+      "on": {
+        "press": {
+          "action": "setState",
+          "params": {
+            "statePath": "/status",
+            "value": "Saved locally"
+          }
+        }
+      },
+      "children": []
+    },
+    "node_8": {
+      "type": "Text",
+      "props": {
+        "text": {
+          "$state": "/status"
+        },
+        "muted": true
+      },
+      "children": []
+    }
+  },
+  "state": {
+    "name": "Ada",
+    "status": "Ready",
+    "revenue": "$48,290",
+    "orders": "1,284",
+    "uptime": "99.98%",
+    "cpu": 42,
+    "traffic": [
+      12,
+      18,
+      15,
+      24,
+      20,
+      35,
+      28,
+      42,
+      38,
+      54,
+      47,
+      62
+    ],
+    "services": [
+      [
+        "API",
+        "Healthy",
+        "24 ms"
+      ],
+      [
+        "Worker",
+        "Healthy",
+        "81 ms"
+      ],
+      [
+        "Database",
+        "Healthy",
+        "6 ms"
+      ]
+    ],
+    "tasks": [
+      "Review deployment",
+      "Check error budget",
+      "Ship the terminal renderer"
+    ]
+  }
+}

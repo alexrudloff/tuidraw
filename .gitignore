@@ -1,0 +1,9 @@
+/target/
+/node_modules/
+/.env
+*.ndjson
+/tui-project/
+/.tui-draw-trash/
+/space game/
+/build a full screen chat application similar to DDIAL /
+__pycache__/

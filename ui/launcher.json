@@ -1,0 +1,249 @@
+{
+  "root": "root",
+  "elements": {
+    "browse": {
+      "type": "Button",
+      "props": {
+        "label": "Add existing…",
+        "intent": "neutral",
+        "variant": "plain",
+        "width": "content",
+        "grow": 0,
+        "hotkey": "Alt+A"
+      },
+      "on": {
+        "press": {
+          "action": "setState",
+          "params": {
+            "statePath": "/command",
+            "value": "browse"
+          }
+        }
+      }
+    },
+    "delete": {
+      "type": "Button",
+      "props": {
+        "label": "Delete…",
+        "intent": "neutral",
+        "variant": "solid",
+        "width": "content",
+        "grow": 0,
+        "hotkey": "Alt+D"
+      },
+      "on": {
+        "press": {
+          "action": "setState",
+          "params": {
+            "statePath": "/command",
+            "value": "delete"
+          }
+        }
+      }
+    },
+    "instruction": {
+      "type": "Text",
+      "props": {
+        "text": "↑ ↓ choose · Tab actions · Enter open",
+        "muted": true,
+        "grow": 0
+      }
+    },
+    "launcher-panel": {
+      "type": "Panel",
+      "props": {
+        "title": "TUI Draw · Projects",
+        "border": "rounded",
+        "surface": true,
+        "padding": 1,
+        "gap": 1,
+        "grow": 0,
+        "width": "fill"
+      },
+      "children": [
+        "global-actions",
+        "projects",
+        "project-path",
+        "project-actions",
+        "feedback",
+        "instruction"
+      ]
+    },
+    "new": {
+      "type": "Button",
+      "props": {
+        "label": "New project",
+        "intent": "neutral",
+        "variant": "plain",
+        "width": "content",
+        "grow": 0,
+        "hotkey": "Alt+N"
+      },
+      "on": {
+        "press": {
+          "action": "setState",
+          "params": {
+            "statePath": "/command",
+            "value": "new"
+          }
+        }
+      }
+    },
+    "open": {
+      "type": "Button",
+      "props": {
+        "label": "Open project",
+        "intent": "primary",
+        "variant": "solid",
+        "width": "content",
+        "grow": 0,
+        "hotkey": "Alt+O"
+      },
+      "on": {
+        "press": {
+          "action": "setState",
+          "params": {
+            "statePath": "/command",
+            "value": "open"
+          }
+        }
+      }
+    },
+    "project-path": {
+      "type": "Text",
+      "props": {
+        "text": {
+          "$state": "/projectPath"
+        },
+        "muted": true,
+        "grow": 0
+      },
+      "children": [],
+      "on": {}
+    },
+    "projects": {
+      "type": "Select",
+      "props": {
+        "title": "",
+        "bordered": false,
+        "searchable": false,
+        "options": [
+          "Space trader",
+          "System monitor",
+          "Chat client"
+        ],
+        "value": {
+          "$bindState": "/selectedProject"
+        },
+        "grow": 0
+      }
+    },
+    "root": {
+      "type": "Column",
+      "props": {
+        "gap": 0,
+        "grow": 0
+      },
+      "children": [
+        "launcher-panel"
+      ]
+    },
+    "global-actions": {
+      "type": "Row",
+      "props": {
+        "gap": 2,
+        "grow": 0,
+        "collapseBelow": 54
+      },
+      "children": [
+        "new",
+        "browse"
+      ]
+    },
+    "project-actions": {
+      "type": "Row",
+      "props": {
+        "gap": 2,
+        "grow": 0
+      },
+      "children": [
+        "open",
+        "delete"
+      ]
+    },
+    "feedback": {
+      "type": "Row",
+      "props": {
+        "gap": 1,
+        "grow": 0,
+        "collapseBelow": 40
+      },
+      "children": [
+        "status",
+        "undo"
+      ],
+      "visible": {
+        "$state": "/hasStatus"
+      }
+    },
+    "status": {
+      "type": "Text",
+      "props": {
+        "text": {
+          "$state": "/status"
+        },
+        "muted": true,
+        "width": "fill",
+        "grow": 0
+      }
+    },
+    "undo": {
+      "type": "Button",
+      "props": {
+        "label": "Undo delete",
+        "intent": "neutral",
+        "variant": "plain",
+        "width": "content",
+        "grow": 0,
+        "hotkey": "Alt+U"
+      },
+      "on": {
+        "press": {
+          "action": "setState",
+          "params": {
+            "statePath": "/command",
+            "value": "undo"
+          }
+        }
+      },
+      "visible": {
+        "$state": "/canUndo"
+      }
+    }
+  },
+  "state": {
+    "command": "",
+    "projectPath": "~/Projects/space-trader",
+    "selectedProject": "Space trader",
+    "status": "",
+    "hasStatus": false,
+    "canUndo": false
+  },
+  "theme": {
+    "design": {
+      "border": "rounded",
+      "density": "comfortable",
+      "emphasis": "quiet"
+    },
+    "background": "#101419",
+    "surface": "#242b35",
+    "foreground": "#f1f3f5",
+    "muted": "#b3bdca",
+    "border": "#6e7c91",
+    "primary": "#cc9eff",
+    "focus": "#cc9eff",
+    "danger": "#ff8585",
+    "success": "#6bdd97",
+    "warning": "#ffd166"
+  }
+}

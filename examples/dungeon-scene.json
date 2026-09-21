@@ -1,0 +1,70 @@
+{
+  "root": "dungeon",
+  "state": {},
+  "elements": {
+    "dungeon": {
+      "type": "Scene",
+      "props": {
+        "title": "THE SUNKEN VAULT / LEVEL 02",
+        "rows": [
+          "################################",
+          "#......#..........#............#",
+          "#..@...+....T.....+....g.......#",
+          "#......#..........#............#",
+          "####+######..##########+########",
+          "#..........~~.......#..........#",
+          "#...$......~~.......+.....>....#",
+          "#..........~~.......#..........#",
+          "################################"
+        ],
+        "legend": [
+          {
+            "symbol": "#",
+            "label": "Wall",
+            "color": "#6b7280"
+          },
+          {
+            "symbol": ".",
+            "label": "Floor",
+            "color": "#263549"
+          },
+          {
+            "symbol": "@",
+            "label": "Party",
+            "color": "#ffbf50"
+          },
+          {
+            "symbol": "+",
+            "label": "Door",
+            "color": "#bd8750"
+          },
+          {
+            "symbol": "T",
+            "label": "Torch",
+            "color": "#ff7733"
+          },
+          {
+            "symbol": "g",
+            "label": "Goblin",
+            "color": "#ed6575"
+          },
+          {
+            "symbol": "~",
+            "label": "Water",
+            "color": "#4fb9dc"
+          },
+          {
+            "symbol": "$",
+            "label": "Treasure",
+            "color": "#efd06c"
+          },
+          {
+            "symbol": ">",
+            "label": "Stairs",
+            "color": "#b29cff"
+          }
+        ]
+      }
+    }
+  }
+}
